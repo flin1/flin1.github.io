@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lora&family=Sahitya&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/42f3d277d0.js" crossorigin="anonymous"></script>
+    <title>MP1</title>
+  </head>
+  <body>
+    <!--Make a sticky header transition with js-->
+    <div class="header" id = "header">
+      <div id= "logo">        
+        <h1 id="title">fay lin</h1>
+        <p id="subhead">the hub for all things fay</p>
+      </div>
+      <div id = "menuIcon">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+      <div class = "menu" id = "menu">
+        <ul class="list">
+          <li class="pages" id = "aboutPage">
+              <h6 class="label" id = "aboutLabel">ABOUT</h6>
+          </li>
+          <li class="pages" id = "portfolioPage">
+              <h6 class="label" id = "portfolioLabel">PORTFOLIO</h6>
+          </li>
+          <li class="pages" id = "interestPage">
+            <h6 class="label" id = "interestLabel">INTERESTS</h6>
+        </li>
+          <li class="pages" id = "contactPage">
+              <h6 class="label" id = "contactLabel">CONTACT</h6>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+    </div>
+
+
+    <div class="spacer"></div>
+    <div class="container">
+      <div id="intro">
+        <h1 id = "tagline">Hey, I'm Fay!</h1> <!--fixed in center image-->
+      </div>
+    </div>
+    <div class="container">
+      <div id="about">
+        <h1>ABOUT</h1>
+        <img id = "fay" src="/assets/fay.jpeg">
+        <div id = "description">       
+          <p> Hey, I'm Fay! I'm a junior at the University of Illinois at Urbana-Champaign studying Computer Science and Chemistry. <br> I love knitting, crocheting, taking care of plants, and riding around campus on my scooter.<br> I am interested in learning more about Web Development and UI/UX Design!<br><br> Currently Learning: React.js</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div id="portfolio">
+        <h1>PORTFOLIO</h1>
+        <!-- clickable modals -->
+        <div class = "card" id = "cardOne">
+          <h3>MIN. WAGE DATA VISUALIZATION</h3>
+          <p>
+            A d3.js visualization of minimum wage for my data visualization class.
+          </p>
+        </div>
+        <div class = "card" id = "cardTwo">
+          <h3>AMAZON FASHION</h3>
+          <p>
+            A fullstack web application that allows companies to submit data about clothing sizing.
+          </p>
+        </div>
+        <div class = "card" id = "cardThree">
+          <h3>AMAZON MUSIC</h3>
+          <p>
+            A backend API that allows third-party devices to play music from Amazon's catalog.
+          </p>
+        </div>
+      <div class = "modal" id = "modalOne">
+        <div class = "info">
+          <img src = "assets/datavis.png" class = "cardImg">
+          <h3>MIN. WAGE DATA VISUALIZATION</h3>
+          <p>
+            A d3.js visualization of minimum wage for my data visualization class.
+          </p>
+          <a href = "https://github.com/flin1/min-wage-data-vis" class = "projectLink">PROJECT LINK</a>
+          <button id = "buttonOne">CLOSE</button>
+        </div>
+      </div>
+      <div class = "modal" id = "modalTwo">
+        <div class = "info">
+          <img src = "assets/luxurystores.png" class = "cardImg">
+          <h3>AMAZON FASHION</h3>
+          <p>
+            A fullstack web application that allows companies to submit data about clothing sizing, called "fit tips".
+          </p>
+          <button id = "buttonTwo">CLOSE</button>
+        </div>
+      </div>
+      <div class = "modal" id = "modalThree">
+        <div class = "info">
+          <img src = "assets/music.png" class = "cardImg">
+          <h3>AMAZON MUSIC</h3>
+          <p>
+            A backend API that allows third-party devices to play music from Amazon's catalog.
+          </p>
+          <button id = "buttonThree">CLOSE</button>
+        </div>
+      </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div id="interests">
+        <h1>INTERESTS</h1>
+        <!-- embedded yt video! + carousel -->
+        <div class = "carousel">
+          <i class="fa-solid fa-arrow-left" id = "left"></i>
+          <img class = "slides" id = "one"  src = "assets/ceramics.jpeg">
+          <img class = "slides" id = "two" src = "assets/plants.jpeg">
+          <iframe src="https://www.youtube.com/embed/iZPJBmrtKS8?si=0n_TgcsTwk29g2Ha" id = "three" class = "slides" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          <i class="fa-solid fa-arrow-right" id = "right"></i>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div id="contact">
+        <h1>CONTACT</h1>
+        <p>Call me, beep me!</p>
+        <div class = "links">
+          <button><a href="mailto:flocean682@gmail.com">EMAIL</a></button>
+          <button><a href="https://acrobat.adobe.com/link/review?uri=urn:aaid:scds:US:3c3b6949-f27b-3002-aad3-8d2ae7527bbe">RESUME</a></button>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div id="footer">
+        <h2>Check out my links!</h2>
+          <a href = "https://www.instagram.com/lin.fayy/" target="_blank"><i class="fa-brands fa-instagram fa-2xl"></i></a>
+          <a href = "https://github.com/flin1" target="_blank"><i class="fa-brands fa-github fa-2xl"></i></a>
+          <a href = "https://www.linkedin.com/in/linfay/" target="_blank"><i class="fa-brands fa-linkedin fa-2xl"></i></a>
+      </div>  
+    </div>
+  </body>
+</html>
